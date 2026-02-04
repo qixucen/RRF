@@ -1,6 +1,16 @@
-# 排除所有文件
-*
+# Python 缓存
+__pycache__/
+*.py[cod]
 
-# 但保留以下文件
-!.gitignore
-!run_benchmark.py
+# API 密钥（敏感信息）
+api/apikey.yaml
+
+# 日志文件
+log/
+
+# 根目录下不开源的文件
+run_baselines.py
+plot_complexity.py
+analyze_limit.py
+collect_limit.py
+show_correct.py
