@@ -1,0 +1,23 @@
+# API 配置模板
+# 复制此文件为 apikey.yaml 并填入你的 API 密钥
+
+default:
+  url: https://api.openai.com/v1
+  api_key:
+    - sk-your-api-key-here
+
+semi:
+  url: https://api.openai.com/v1
+  api_key:
+    - sk-your-api-key-here
+
+# 模型到 API 配置的映射
+model2base:
+  default: default
+  qwen2.5-math-7b-instruct: default
+  gpt-4o-mini: semi
+  gpt-5: semi
+  gpt-5-mini: semi
+  gpt-5-nano: semi
+  moonshotai/kimi-k2-0905: semi
+  DeepSeek-V3: semi
