@@ -1,0 +1,37 @@
+{
+  "config": {
+    "agent_type": "sequential_recursive",
+    "model": "gpt-4o-mini",
+    "max_iterations": 10,
+    "max_depth": 2,
+    "force_invoke": false,
+    "num_explorations": 3,
+    "num_runs": 1,
+    "dataset": "math500",
+    "start": 0,
+    "end": 30
+  },
+  "analysis": {
+    "correct": 1,
+    "total": 1,
+    "accuracy": 1.0,
+    "avg_calls": 25.0,
+    "avg_world_state_calls": 7.0,
+    "avg_aggregation_calls": 1.0
+  },
+  "results": [
+    {
+      "id": "test/number_theory/515.json",
+      "answer": "27",
+      "extracted": "27",
+      "correct": true,
+      "total_calls": 25,
+      "stopped_reason": "aggregated",
+      "final_content": "All three explorations consistently arrived at the same answer of \\(\\boxed{27}\\), indicating a strong consensus among the results. Since there were no discrepancies or corrections noted in the answers, we can confidently adopt this consistent result as the final answer. \n\nFinal answer: \\(\\boxed{27}\\)",
+      "iterations": [],
+      "world_state_calls": 7,
+      "aggregation_calls": 1,
+      "num_explorations": 3
+    }
+  ]
+}
